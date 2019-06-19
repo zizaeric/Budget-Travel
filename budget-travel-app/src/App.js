@@ -1,26 +1,34 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+//import logo from './logo.svg';
+import './style.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h1>Travel Companion</h1>
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div class="gtco-container">
+			
+    <div class="row">
+      <div class="col-sm-4 col-xs-12">
+        <div id="gtco-logo"><a href="index.html">Insider Traveler <em>.</em></a></div>
+      </div>
+      <div class="col-xs-8 text-right menu-1">
+        <ul>
+          <li><a href="destination.html">Destination</a></li>
+          <li class="has-dropdown">
+            <a href="#">Travel</a>
+            <ul class="dropdown">
+              <li><a href="">Europe</a></li>
+              <li><a href="#">Asia</a></li>
+              <li><a href="#">America</a></li>
+              <li><a href="#">Canada</a></li>
+            </ul>
+          </li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>	
+      </div>
     </div>
+    
+  </div>
   );
 }
 
